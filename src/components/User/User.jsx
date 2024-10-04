@@ -47,6 +47,7 @@ const User = () => {
               <th></th>
               <th>Email</th>
               <th>Created At</th>
+              <th>lastLoggedAt</th>
               <th> Action</th>
             </tr>
           </thead>
@@ -56,6 +57,7 @@ const User = () => {
                 <th></th>
                 <td>{user.email}</td>
                 <td>{user.createdAt}</td>
+                <td>{user.lastLoggedAt}</td>
                 <td>
                   <button
                     onClick={() => handleDelete(user._id)}
